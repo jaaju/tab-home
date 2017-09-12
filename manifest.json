@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Homepage.",
+  "version": "0.1",
+  "description": "Set a homepage for new tabs.",
+  "icons": {
+    "128": "tab-home.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": [ "tab-home.js" ]
+  },
+  "browser_action": {
+    "default_icon": "tab-home.png",
+    "default_popup": "tab-home.html?options"
+  }
+}
